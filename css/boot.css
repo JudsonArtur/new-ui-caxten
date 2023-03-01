@@ -1,13 +1,16 @@
 /* FONTS */
 @font-face {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    src: url('../fonts/segoe-regular.TTF');
+    src: url('../fonts/segoe-regular.TTF') format('truetype');
 }
 @font-face {
     font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
-    src: url('../fonts/segoe-bold.TTF');
+    src: url('../fonts/segoe-bold.TTF') format('truetype');
 }
 
+.icon-inner title{
+    display: none !important;
+}
 /*RESET*/
 html,body,header,section,article,
 aside,div,p,ul,li,ol,h1,h2,h3,

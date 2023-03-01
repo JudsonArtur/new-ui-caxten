@@ -14,21 +14,17 @@
     <main>
         <div class="final-checkout">
           <header class="fc--main-header"> <!-- fc = final-checkout -->
-            <div class="container flex-c-vert">
-                <div class="logotype-side">
-                    <div class="logotype">
+            <div class="flex-c-vert">
+                <div class="logotype-side flex-c-vert">
+                    <a href="#" class="logotype flex-c-vert">
                         <img src="img/logo-black.png" alt="">
-                    </div>
-                    <div class="logotype-extra">
-    
-                    </div>
-                 </div>
-                 <div class="user-info flex-c-vert">
-                        <img src="img/avatar.png" alt="">
-                        <span class="user-name ">
-                          Judson Artur
-                        </span>
-                      <div class="user-menu ">
+                        <span>JC-Money Corporation</span>
+                    </a>                   
+                </div>
+                <div class="user-info flex-c-vert">
+                    <img src="img/avatar.png" alt="">
+                    <span class="user-name ">Judson Artur</span>
+                    <div class="user-menu ">
                         <ul class="user-list">
                             <li>
                               <a href="" class="flex-c-vert">
@@ -77,8 +73,8 @@
                                   <span>Atalhos do teclado</span>
                               </a> 
                             </li>
-                      </ul>
-                      </div>
+                        </ul>
+                    </div>
                       
                  </div> 
             </div>
@@ -100,17 +96,17 @@
                                 Escolha a frequência de cobrança e cancele a qualquer momento.
                             </p>
                             <div class="payment-types  month-year-js">
-                                <label  for="" class="flex-c-vert info-month active">
-                                    <input type="radio" name="" id="info-month" checked>
+                                <label  for="" class="flex info-year active">
+                                    <input type="radio" name="" id="info-year" checked>
                                      <div class="payment-types--text">
-                                        <span>Mensal</span>
+                                        <span>Anual</span>
                                         <p>Pague $ 1 x 3 meses e, a seguir, $ 32/meses</p>
                                      </div>
                                 </label>
-                                <label  for="" class="flex-c-vert info-year">
-                                    <input type="radio" name="" id="info-year">
+                                <label  for="" class="flex info-month">
+                                    <input type="radio" name="" id="info-month" >
                                      <div class="payment-types--text">
-                                        <span>Anual</span>
+                                        <span>Mensal</span>
                                         <p>Pague $ 1 x 3 meses e, a seguir, $ 32/meses</p>
                                      </div>
                                 </label>
@@ -144,19 +140,17 @@
                        <div class="fc--checkout-plan">
                              <div class="checkout-plan--header">
                                  <h2>
-                                    Plano Basic Shopify
+                                    Plano Económico <a href="#">Alterar o plano</a>
                                  </h2>
-
-                                 <a href="#">Alterar o plano</a>
                              </div>
                              <div class="checkout-plan--text">
-                                <p class="info-year-js">
+                                <p class="info-year-js open">
                                     Assim que a avaliação terminar em <b> 3 de mar. de 2023</b>, haverá a cobrança de <b>$ 1,00 USD</b> e tributos.
                                 </p>
-                                <p class="info-month-js  open">
+                                <p class="info-month-js">
                                     Em 1 de junho de 2023, o plano será renovado com o valor de <b>$ 32,00 USD</b> + tributos a cada 30 dias.
                                 </p>
-                                <p class="info-month-js  open">
+                                <p class="info-month-js">
                                     Assim que a avaliação terminar em <b> 3 de mar. de 2023</b>, haverá a cobrança de <b>$ 1,00 USD</b> e tributos.
                                 </p>
 
@@ -190,26 +184,20 @@
                                  <div class="checkout-subtotal-price">
                                      <div class="subtotal-price-list flex-c-vert">
                                          <span class="price-title">Subtotal</span>
-                                         <span class="price-value">$ 32,00 USD</span>
+                                         <span class="price-value">288,00 KZ</span>
                                      </div>
-                                     <div class="subtotal-price-list flex-c-vert">
-                                        <span class="price-title">$ 1 USD/mês por 3 meses (Basic Shopify)</span>
-                                        <span class="price-value">$ 31,00 USD</span>
+                                     <div class="subtotal-price-list fw-600 flex-c-vert">
+                                        <span class="price-title">Total</span>
+                                        <span class="price-value">288,00 KZ</span>
                                     </div>
                                 </div>
-                                <div class="checkout-total fw600">
-                                    <div class="total-price-list flex-c-vert">
-                                        <span class="price-title">total</span>
-                                        <span class="price-value">$ 32,00 USD</span>
-                                    </div>
-
+                                <div class="checkout-btns-text">
                                     <button class="flex-c-vert checkout-button transfer open">
                                          Contratar o plano
                                     </button>
                                     <button class="flex-c-vert checkout-button gateway">
                                         <img src="img/mx-express.png" alt="" srcset=""> Contratar o plano
                                     </button>
-
                                     <p>
                                         Confirme o ciclo de faturamento, adicione o endereço comercial e uma forma de pagamento antes de iniciar o plano.
                                     </p>

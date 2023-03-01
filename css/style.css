@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 .final-checkout{
     color: #363636;
@@ -20,14 +20,19 @@
     box-shadow: 0 0.125rem 0.125rem -0.0625rem #00000026;
 }
 
-.fc--main-header .container{
+.fc--main-header > .flex-c-vert{
     justify-content: space-between;
+    padding: 0 50px;
 }
 
-.logotype{
-    width: 120px;
-}
 
+.logotype img {
+    width: 30px;
+    margin-right: 8px;
+}
+.logotype span{
+    font-weight: 600;
+}
 .user-info{
     position: relative;
     padding: .25rem .7rem .25rem .5rem;
@@ -114,15 +119,19 @@
 }
 
 .fc--second-header a{
-    width: 40px;
-    height: 36px;
+    width: 36px;
+    height: 30px;
     border: 1px solid #babfc3;
     border-radius: .25rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    margin-right: 18px;
+    margin-right: 12px;
+}
+
+.fc--second-header a .hydrated {
+    height: 1rem;
 }
 
 .fc--second-header a:hover{
@@ -130,9 +139,8 @@
 }
 
 .fc--second-header h2{
-    font-size: 1.2rem;
-    font-weight: 500;
-    
+    font-size: 1.12rem;
+    font-weight: 600;
 }
 
 .payment-clicle{
@@ -144,9 +152,9 @@
 }
 
 .payment-clicle h3{
-    font-size: 1.061rem;
-    font-weight: 500;
-    margin-bottom: 15px;
+    font-size: 1.0061rem;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
 .payment-clicle p{
@@ -154,7 +162,7 @@
     font-size: .92rem;
 }
 .payment-types{
-    margin: 15px 0;
+    margin: 25px 0 15px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
@@ -185,10 +193,14 @@
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    height: 20px;
-    margin: 0.125rem;
-    width: 20px;
+    height: 15px;
+    width: 15px;
+    margin: 0.125rem;   
 }
+ .month-year-js input{
+     position: relative;
+     top: 4px;
+ }
 
 .payment-types input:checked {
     background: radial-gradient(circle,#02a95c 45%,#fff 0);
@@ -196,20 +208,20 @@
 }
 
 .payment-types input:hover:not(:disabled) , .payment-types label:hover input:not(:disabled) {
-    box-shadow: 0 0 0 0.625rem #e6f6ef;
+    box-shadow: 0 0 0 0.425rem #e6f6ef;
 }
 .payment-types label img{
-    width: 25px;
+    width: 23px;
     margin-left: 8px;
 }
 .payment-types--text{
-    margin-left: 10px;
+    margin-left: 7px;
 }
 
 .payment-types--text span{
     color: #2c2c2c;
     font-size: .92rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .payment-types--text p{
@@ -225,7 +237,7 @@
     margin-bottom: 15px;
 }
 .payment-types.p-way .payment-types--text span{
-  font-size: 1.01rem;
+  font-size: .94rem;
 }
 
 .fc--checkout-plan{
@@ -240,24 +252,31 @@
     margin-bottom: 20px;
     
 }
+
 .checkout-plan--header h2{
-    font-size: 1.184rem;
+    font-size: 1.0064rem;
     line-height: 1.8;
-    font-weight: 500;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
     color: #3f3f3f;
     margin-bottom: 10px;
 }
+
 .checkout-plan--header a{
-    font-size: .98rem;
+    font-size: .8rem;
+    position: relative;
+    top: 5px;
     color: #0c78c5;
+    font-weight: 500;
 }
 .checkout-plan--text{
     padding: 0 18px;
 }
 .checkout-plan--text p{
     font-size: .9rem;
-    line-height: 1.7;
-    margin-bottom: 13px;
+    line-height: 1.4;
+    margin-bottom: 12px;
     display: none;
 }
 .checkout-plan--text p.open{
@@ -285,16 +304,16 @@
     border-bottom: 1px solid #cecece;
 }
 .plan-info--body ul li{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .plan-info--body ul li .hydrated{
-    font-size: .5rem;
+    font-size: .4rem;
     color: #666;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .plan-info--body ul li p{
-    font-size: .9rem;
+    font-size: .85rem;
     color: #666;
 }
 
@@ -306,9 +325,14 @@
 .subtotal-price-list{
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
 }
-
+.subtotal-price-list.fw-600{
+    font-weight: 600;
+}
+.subtotal-price-list.fw-600 span{
+    font-size: 1.01rem;
+}
 .subtotal-price-list span{
     width: 65%;
 }
@@ -320,18 +344,17 @@
     font-size: .83rem;
 }
 
-.checkout-total{
+.checkout-btns-text{
     padding: 0 18px ;
 }
-.total-price-list{
-    justify-content: space-between;
-    padding-bottom: 20px;
-}
-.fw600 .total-price-list{
-    font-weight: 600;
-    font-size: .95rem;
-    text-transform: uppercase;
-}
+
+.checkout-btns-text p{
+    font-size: .88rem;
+    margin:15px  0 0;
+    line-height: 1.47;
+    color: #8e8e8e;
+ }
+
 .checkout-button{
     width: 100%;
     padding: 10px 20px 15px;
@@ -355,23 +378,22 @@
    background: #EC7008;;
 }
 .checkout-button.gateway img{
-    width: 22px;
+    width: 19px;
+    width: 19px;
     position: relative;
-    top: 2px;
-    margin-right: 10px;
+    top: 1px;
+    margin-right: 8px;
  }
 
- .checkout-total p{
-    font-size: .8rem;
-    margin:15px  0 0;
-    line-height: 1.7;
-    color: #4e4e4e;
- }
+
 
  @media ( max-width:1068px)
   {
     .user-menu{
       left: -85%;
+    }
+    .fc--second-header {
+        padding: 20px;
     }
  }
  @media ( max-width:768px)
@@ -381,6 +403,14 @@
       padding-right: 0;
       padding: 20px;
    }
+
+   .fc--main-header > .flex-c-vert {
+        padding: 0 10px;
+    }
+
+    .fc--second-header{
+        padding: 20px 15px;
+    }
 }
 @media ( max-width:468px)
 {
