@@ -17,7 +17,7 @@
     width: 100%;
     background-color: #fff;
     padding: .5rem;
-    box-shadow: 0 0.125rem 0.125rem -0.0625rem #00000026;
+    border-bottom:  #ccc;
 }
 
 .fc--main-header > .flex-c-vert{
@@ -50,6 +50,7 @@
     height: 2rem;
     border-radius: 50%;
     background-color: rgb(157, 153, 151);
+    border: 1px solid #cecece;
     margin-right: 8px;    
 }
 
@@ -120,7 +121,7 @@
 
 .fc--second-header a{
     width: 36px;
-    height: 30px;
+    height: 35px;
     border: 1px solid #babfc3;
     border-radius: .25rem;
     display: flex;
@@ -163,7 +164,7 @@
 }
 .payment-types{
     margin: 25px 0 15px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #dfdfdf;
     border-radius: 5px;
     width: 100%;
 }
@@ -180,7 +181,7 @@
     background-color: #ebf5fa;
 }
 .payment-types label:last-of-type{
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #dfdfdf;
     border-radius:  0px 0px 5px 5px;
 }
 
@@ -197,9 +198,10 @@
     width: 15px;
     margin: 0.125rem;   
 }
+
  .month-year-js input{
      position: relative;
-     top: 4px;
+     top: 2px;
  }
 
 .payment-types input:checked {
@@ -226,13 +228,22 @@
 
 .payment-types--text p{
     font-size: .85rem;
+    margin-top: 2px;
 }
-
+.payment-types--text small{
+    padding: 2px 6px 5px 6px;
+    border-radius: 2px;
+    font-weight: 600;
+    margin-left: 4px;
+    color: #fff;
+    font-size: .7rem;
+    background-color: #343434;
+}
 .payment-types.p-way{
     border: none;
 }
 .payment-types.p-way label{
-    border: 1px solid #ccc;
+    border: 1px solid #dfdfdf;
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -264,11 +275,15 @@
 }
 
 .checkout-plan--header a{
-    font-size: .8rem;
+    font-size: .78rem;
     position: relative;
     top: 5px;
     color: #0c78c5;
     font-weight: 500;
+}
+
+.checkout-plan--header a:hover{
+     text-decoration: underline;
 }
 .checkout-plan--text{
     padding: 0 18px;
@@ -366,17 +381,13 @@
     color: #fff;
     display: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .checkout-button.open{
    display: flex;
 }
-.checkout-button.transfer{
-    background-color: #0c78c5;
-}
-.checkout-button.gateway{
-   background: #EC7008;;
-}
+
 .checkout-button.gateway img{
     width: 19px;
     width: 19px;
@@ -420,4 +431,175 @@
   .payment-types label {
        flex-wrap: nowrap;
   }
+}
+
+
+/* ---- PLANO -----*/
+
+.plan-item{
+    padding: 40px;
+    background-color: #fff;
+    width: calc(100% - 10px);
+    border-radius:.5rem;
+    box-shadow: 0 0 0 1px #3f3f440d, 0 1px 3px 0 #3f3f4426;
+    height: 100%;
+    overflow: hidden;
+}
+.box2:last-of-type .plan-item{
+    margin-left: 10px;
+}
+.plan-header h3{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.plan-header p{
+    margin-top: 3px;
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+.plan-price{
+    margin: 25px 0 18px;
+}
+.plan-price p{
+    font-size: .95rem;
+}
+.plan-price p small{
+    padding: 2px 8px 4px;
+    background-color: #007b5c;
+    color: #fff;
+    text-decoration: line-through;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.price-number{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color:#007b5c;
+}
+.price-by{
+    position: relative;
+    top: 16px;
+    font-size: .9rem;
+}
+
+.plan-button {
+    display: inline-block;
+    margin: 5px 0 10px;
+    text-align: center;
+    color: #fff;
+    font-size: .99rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 3px;
+    border: 0;
+    padding: 12px 0 13px;
+    transition: .25s ease-in-out;
+    background: #008060;
+    cursor: pointer;
+}
+
+.plan-button:hover{
+    transform: scale(1.03);
+}  
+
+.plan-button.recommended {
+    background: #fff;
+    border: 2px solid #008060;
+    color: #008060;
+}
+.plan-resources{
+    border-top: 1px solid #cecece;
+    margin: 20px -40px;
+    padding:20px 40px;
+}
+.plan-resources h3{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .85rem;
+  margin-bottom: 15px
+}
+.plan-resources ul{
+    margin: 5px 0;
+}
+.plan-resources ul li {
+   margin-bottom: 12px;
+}
+.plan-resources ul li ion-icon{
+   position: relative;
+   top: 1px;
+   font-size: 22px;
+   pointer-events: none;
+   margin-right: 10px;
+}
+.plan-resources ul li span:last-of-type{
+    font-size: .9rem;
+}
+
+.all-plan-resources{
+    margin:30px 0;
+    padding: 25px;
+    background-color: #fff;
+    width: calc(100%);
+    border-radius:.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #3f3f440d, 0 1px 3px 0 #3f3f4426; 
+}
+.all-plan-resources h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.all-plan-resources .first-column{
+    width: 66.66%;
+}
+
+.all-plan-resources ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.all-plan-resources .second-column{
+    width:33.34%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.all-plan-resources .first-column ul li{
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    flex-wrap: nowrap !important;
+}
+.all-plan-resources .second-column ul li{
+    width: 100%;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    flex-wrap: nowrap !important;
+}
+.all-plan-resources ul li > span ion-icon {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+    color: #007b5c;
+}
+.all-plan-resources ul li div span{
+    font-size: .86rem;
+    color: #111;
+}
+.all-plan-resources ul li div p{
+    font-size: .72rem;
+    color: #858585;
+}
+
+.all-plan-resources .third-column{
+  margin: 20px -25px;
+  border-top: 1px solid #cecece;
+  padding: 25px;
+}
+.all-plan-resources .third-column ul li {
+    width: 33.333%;
+    flex-wrap: nowrap;
+    padding-right: 10px;
 }

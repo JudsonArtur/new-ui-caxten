@@ -18,10 +18,12 @@ $('.month-year-js label').on('click',function(){
      $(this).find('input').prop('checked',true);
      $('.month-year-js label').removeClass('active');
      $(this).addClass('active');;
-
+     $('#subtotal-price').html(`${$(this).data('price')} KZ`);
+     $('#total-price').html(`${$(this).data('total')} KZ`);
      if( $('#info-year').is(":checked")){
          $('.info-month-js').removeClass('open');
          $('.info-year-js').addClass('open'); 
+            
          return  
      }
      $('.info-year-js').removeClass('open');
@@ -29,7 +31,6 @@ $('.month-year-js label').on('click',function(){
  }); 
 
 /* TRANSFERENCIA  E MULTICAIXA EXPRESS */
-
 $('.payment-types.p-way label').on('click',function(){
      $('.pt--gateway').find('input').prop('checked',false);
      $('.pt--transfer').find('input').prop('checked',false);
@@ -44,6 +45,7 @@ $('.payment-types.p-way label').on('click',function(){
      $('.gateway').addClass('open');  
  });
 
+/* ESCONDER E MOSTRAR INFORMAÇÕES */
  $('.plan-info--header').on('click', function(){
           $(this).siblings('.plan-info--body').slideToggle();
           let arr = $(this).find('.arrow').attr('name');
@@ -52,6 +54,5 @@ $('.payment-types.p-way label').on('click',function(){
                return
           }
           $(this).find('.arrow').attr('name','chevron-down-outline' ); 
-          
-       
  });
+

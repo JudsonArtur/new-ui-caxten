@@ -16,19 +16,19 @@
           <header class="fc--main-header"> <!-- fc = final-checkout -->
             <div class="flex-c-vert">
                 <div class="logotype-side flex-c-vert">
-                    <a href="#" class="logotype flex-c-vert">
+                    <div href="#" class="logotype flex-c-vert">
                         <img src="img/logo-black.png" alt="">
                         <span>JC-Money Corporation</span>
-                    </a>                   
+                    </div>                   
                 </div>
                 <div class="user-info flex-c-vert">
-                    <img src="img/avatar.png" alt="">
+                    <img src="img/avatar.jpg" alt="">
                     <span class="user-name ">Judson Artur</span>
                     <div class="user-menu ">
                         <ul class="user-list">
                             <li>
                               <a href="" class="flex-c-vert">
-                                  <span>
+                                  <span class="ion-icons">
                                       <ion-icon name="person-circle"></ion-icon>
                                   </span>
                                   <span>Gerenciar conta</span>
@@ -36,13 +36,13 @@
                             </li>
                             <li>
                               <a href="" class="flex-c-vert">
-                                  <span><ion-icon name="home"></ion-icon></span>
+                                  <span><ion-icon name="home" class="ion-icons"></ion-icon></span>
                                   <span>Lojas</span>
                               </a> 
                             </li>
                             <li>
                               <a href="" class="flex-c-vert">
-                                  <span><ion-icon name="arrow-forward-circle"></ion-icon></span>
+                                  <span><ion-icon name="arrow-forward-circle" class="ion-icons"></ion-icon></span>
                                   <span>Sair</span>
                               </a> 
                             </li>
@@ -82,32 +82,32 @@
           <section class="container">
                 <header class="fc--second-header flex-c-vert">
                     <a href="#">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        <ion-icon name="arrow-back-outline" class="ion-icons"></ion-icon>
                     </a>
                      <h2>
                         Confirmar o plano Basic Shopify
                      </h2>
                 </header>
-                <div class="flex">
+                <form class="flex">
                     <div class="w-65  pd-rigth-30">
                          <div class="payment-clicle">
                             <h3>Ciclo de faturamento</h3>
                             <p>
-                                Escolha a frequência de cobrança e cancele a qualquer momento.
+                                Escolha a frequência de pagamento e altere a qualquer momento.
                             </p>
                             <div class="payment-types  month-year-js">
-                                <label  for="" class="flex info-year active">
-                                    <input type="radio" name="" id="info-year" checked>
+                                <label  for="" class="flex info-year " data-price="4.950,00" data-total="59.400,00">
+                                    <input type="radio" name="" id="info-year">
                                      <div class="payment-types--text">
-                                        <span>Anual</span>
-                                        <p>Pague $ 1 x 3 meses e, a seguir, $ 32/meses</p>
+                                        <span>Anual (KZ 4.950,00/mês)</span>
+                                        <p>Pague 59.400,00 por ano <small>Recomendado</small></p>
                                      </div>
                                 </label>
-                                <label  for="" class="flex info-month">
+                                <label  for="" class="flex info-month" data-price="5.850,00" data-total="5.850,00">
                                     <input type="radio" name="" id="info-month" >
                                      <div class="payment-types--text">
-                                        <span>Mensal</span>
-                                        <p>Pague $ 1 x 3 meses e, a seguir, $ 32/meses</p>
+                                        <span>Mensal (KZ 5.850,00/mês)</span>
+                                        <p>Pague 5.850,00 por mês</p>
                                      </div>
                                 </label>
                             </div>
@@ -116,7 +116,7 @@
                          <div class="payment-clicle ">
                             <h3>Forma de pagamento</h3>
                             <p>
-                                Escolha como você quer pagar a Shopify.
+                                Escolha como quer pagar a Caxten.
                             </p>
                             <div class="payment-types p-way">
                                 <label  for="" class="flex-c-vert pt--gateway">
@@ -127,7 +127,7 @@
                                      </div>
                                 </label>
                                 <label for="" class="flex-c-vert pt--transfer">
-                                    <input type="radio" name="" id="transfer" checked>
+                                    <input type="radio" name="" id="transfer">
                                     <div class="payment-types--text">
                                         <span>Transferencia Bancaria</span>
                                     </div>
@@ -158,25 +158,41 @@
                              <div class="plan-info">
                                 <div class="plan-info--header flex-c-vert">
                                     <span>Informação do plano</span>
-                                    <ion-icon class="arrow" name="chevron-down-outline"></ion-icon>
+                                    <ion-icon class="arrow ion-icons" name="chevron-down-outline"></ion-icon>
                                 </div>
                                 <div class="plan-info--body">
                                      <ul>
                                         <li class="flex-c-vert">
-                                            <ion-icon name="ellipse"></ion-icon>
-                                            <p><b>2 membros da equipe</b></p>
+                                            <ion-icon name="ellipse" class="ion-icons"></ion-icon>
+                                            <p>Utilizadores Ilimitados</p>
                                         </li>
                                         <li class="flex-c-vert">
-                                            <ion-icon name="ellipse"></ion-icon>
-                                            <p>Até <b>1.000 locais</b></p>
+                                            <ion-icon name="ellipse" class="ion-icons"></ion-icon>
+                                            <p> Exportação do <b>SAF-T</b></p>
                                         </li>
                                         <li class="flex-c-vert">
-                                            <ion-icon name="ellipse"></ion-icon>
-                                            <p>Bons descontos de frete da Shopify</p>
+                                            <ion-icon name="ellipse" class="ion-icons"></ion-icon>
+                                            <p>Gestão de Produtos</p>
                                         </li>
                                         <li class="flex-c-vert">
-                                            <ion-icon name="ellipse"></ion-icon>
-                                            <p>Shopify PDV para mercados e eventos</p>
+                                            <ion-icon name="ellipse" class="ion-icons"></ion-icon>
+                                            <p>Gestão de Clientes <b>C/C</b></p>
+                                        </li>
+                                        <li class="flex-c-vert">
+                                            <ion-icon name="ellipse" class="ion-icons"></ion-icon>
+                                            <p> Movimentos de Caixa</p>
+                                        </li>
+                                        <li class="flex-c-vert">
+                                            <ion-icon name="ellipse" class="ion-icons"></ion-icon>
+                                            <p>Fiscalidade</p>
+                                        </li>
+                                        <li class="flex-c-vert">
+                                            <ion-icon name="ellipse" class="ion-icons"></ion-icon>
+                                            <p>Múltiplas Lojas</p>
+                                        </li>
+                                        <li class="flex-c-vert">
+                                            <ion-icon name="ellipse" class="ion-icons"></ion-icon>
+                                            <p>Relatórios</p>
                                         </li>
                                        
                                      </ul>
@@ -184,18 +200,18 @@
                                  <div class="checkout-subtotal-price">
                                      <div class="subtotal-price-list flex-c-vert">
                                          <span class="price-title">Subtotal</span>
-                                         <span class="price-value">288,00 KZ</span>
+                                         <span class="price-value" id="subtotal-price">4.950,00 KZ</span>
                                      </div>
                                      <div class="subtotal-price-list fw-600 flex-c-vert">
                                         <span class="price-title">Total</span>
-                                        <span class="price-value">288,00 KZ</span>
+                                        <span class="price-value" id="total-price">4.950,00 KZ</span>
                                     </div>
                                 </div>
                                 <div class="checkout-btns-text">
-                                    <button class="flex-c-vert checkout-button transfer open">
+                                    <button class="flex-c-vert checkout-button transfer btn-blue open">
                                          Contratar o plano
                                     </button>
-                                    <button class="flex-c-vert checkout-button gateway">
+                                    <button class="flex-c-vert checkout-button gateway btn-orange">
                                         <img src="img/mx-express.png" alt="" srcset=""> Contratar o plano
                                     </button>
                                     <p>
@@ -205,7 +221,7 @@
                              </div>
                        </div>
                     </div>
-                </div>
+                </form>
           </section>
         </div>
     </main>
