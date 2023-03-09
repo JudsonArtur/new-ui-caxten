@@ -466,7 +466,7 @@
 }
 .plan-price p small{
     padding: 2px 8px 4px;
-    background-color: #007b5c;
+    background-color: #666;
     color: #fff;
     text-decoration: line-through;
     font-weight: 600;
@@ -476,7 +476,7 @@
 .price-number{
     font-size: 1.9rem;
     font-weight: 600;
-    color:#007b5c;
+    color:#444;
 }
 .price-by{
     position: relative;
@@ -496,7 +496,7 @@
     border: 0;
     padding: 12px 0 13px;
     transition: .25s ease-in-out;
-    background: #008060;
+    background: #777;
     cursor: pointer;
 }
 
@@ -506,8 +506,8 @@
 
 .plan-button.recommended {
     background: #fff;
-    border: 2px solid #008060;
-    color: #008060;
+    border: 2px solid #888;
+    color: #555;
 }
 .plan-resources{
     border-top: 1px solid #cecece;
@@ -532,6 +532,7 @@
    font-size: 22px;
    pointer-events: none;
    margin-right: 10px;
+   color: #888;
 }
 .plan-resources ul li span:last-of-type{
     font-size: .9rem;
@@ -603,3 +604,105 @@
     flex-wrap: nowrap;
     padding-right: 10px;
 }
+
+.avaliation{
+    background-color: #fff;
+    box-shadow: 0 0 0.3125rem #1718180d, 0 0.0625rem 0.125rem #00000026;
+    border-radius: .35rem;
+    padding:2.5rem 3rem;
+    margin-bottom: 30px;
+    width: calc( 100% - 50px);
+    margin: 50px 25px;
+    text-align: center;
+}
+
+
+.avaliation-icon{
+    padding: 5px 0 ;
+}
+.avaliation-icon ion-icon {
+   font-size: 74px;
+   color: #F3AD00;
+}
+
+.avaliation h3{
+    font-size: 1.12rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    
+}
+
+.avaliation > p{
+    font-size: .88rem;
+    padding:2px 0px; 
+    color: #727272;
+    line-height: 1.5;
+    margin: 0 45px;
+     width: calc(100% - 90px);
+ }
+ .avaliation > p a{
+     color: #0c78c5;
+ }
+
+ .avaliation > p a:hover{
+    text-decoration: underline;
+ }
+ .avaliation-plan{
+     margin: 35px 45px 15px;
+     padding: 16px 18px 18px;
+     width: calc(100% - 90px);
+     justify-content: space-between;
+     border-radius: 5px;
+     border:1px solid #dedede
+ }
+.avaliation-plan.plan-warn{
+    background-color: #FEF7EA;
+    border:2px solid  #FADEAF;
+}
+.avaliation-plan.plan-warn:hover{
+    background-color: #FADEAF;
+    border:2px solid  #888;
+}
+ .avaliation-plan:hover{
+    background-color: #f8f8f8;
+    border-color: #0c78c5;
+ }
+
+.avaliation-plan strong{
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+ .avaliation-plan--text{
+    text-align: left;
+ }
+ .avaliation-plan--text p{
+    font-size: .88rem;
+    color: #777 ;
+ }
+ .avaliation-plan ion-icon{
+    font-size: 20px;
+ }
+
+ .avaliation-icon img{
+    width: 50px;
+ }
+
+ .warning-icon {
+     width: 55px;
+     height: 55px;
+     margin-right: 10px;
+     background: #EF9400;
+     box-shadow: 0 0 0 #656565;
+     border-radius: 13px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .warning-icon ion-icon{
+    font-size: 40px;
+    color: #fff;
+ }
+
+ .warning-icon.circle{
+    border-radius: 50%;
+ }
