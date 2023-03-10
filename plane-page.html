@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/boot.css">
     <link rel="stylesheet" href="css/style.css">
     
     <title>Novo Ui</title>
 </head>
 <body>
-    
     <main>
         <div class="final-checkout">
           <header class="fc--main-header"> <!-- fc = final-checkout -->
@@ -88,18 +88,24 @@
                         Confirmar o plano Basic Shopify
                      </h2>
                 </header>
-             <div class="wrapper m10-adjust flex">
-                <div class="box2 ">
-                    <div class="plan-item">
-                        <div class="plan-header">
-                            <h3>Plano Económico</h3>
-                            <p>Leve sua empresa para o próximo patamar</p>
+                <div class="flex-c-vert warning-banner">
+                    <ion-icon name="alert-circle" class="ion-icons"></ion-icon>
+                    <p>Em caso de dúvidas, <a href=""> entre em contato conosco</a>.</p>
+                </div>
+                  <h2 class="pg-title">
+                    A avaliação gratuita expirou. Escolha um plano para continuar.
+                  </h2>
+                <div class="wrapper m10-adjust flex">
+                    <div class="box3 ">
+                        <div class="plan-item">
+                         <div class="plan-header" >
+                            <h3>Económico</h3>
+                            <p>Todos os recursos para você criar uma loja, enviar produtos e processar pagamentos</p>
                         </div>
                         <div class="plan-price">
-                            <p>Preço inicial <small class="promo-price">KZ 2.000,00</small></p>
-                            <div class="price-body flex" >
+                            <div class="price-body flex-c-hort"  >
                                 <div class="price-number">
-                                    KZ 5.850,00
+                                    <span class="currency-style">KZ</span>5.850,00
                                 </div>
                                 <div class="price-by">/mes</div>
                             </div>
@@ -110,57 +116,66 @@
                         <div class="plan-resources">
                             <h3>Recursos essenciais</h3>
                             <ul>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <li  class="flex-c-vert">
+                                    <span class="check-icons"></span>
                                     <span>Utilizadores Ilimitados</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Exportação do SAF-T</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Gestão de Produtos</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Gestão de Clientes C/C</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Movimentos de Caixa</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Fiscalidade</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Múltiplas Lojas</span>
                                 </li>
                                 
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Relatórios</span>
+                                </li>
+                                
+                                <li class="flex-c-vert">
+                                    <span class="check-icons-no"></span>
+                                    <span class="no-check">Gestão de Compras</span>
+                                </li>
+                                <li class="flex-c-vert">
+                                    <span class="check-icons-no"></span>
+                                    <span class="no-check">Tesouraria</span>
                                 </li>
                             </ul>
                         </div>
                    </div>
                 </div>
-                <div class="box2">
+                <div class="box3">
                     <div class="plan-item">
-                        <div class="plan-header">
-                            <h3>Plano Negócio</h3>
-                            <p>Experimente o melhor do Caxten</p>
+                        <div class="plan-header" >
+                            <h3>Negócio <small class="plan-recomanded">Recomendado</small></h3>
+                            <p>Aproveite os relatórios profissionais e mais contas de membro da equipe para incrementar sua empresa</p>
                         </div>
-                        <div class="plan-price">
-                            <p>Preço inicial <small class="promo-price">KZ 2.000,00</small></p>
-                            <div class="price-body flex" >
+                        <div class="plan-price" >
+                            <div class="price-body flex-c-hort"  >
                                 <div class="price-number">
-                                    KZ 6.850,00
+                                    <span class="currency-style">KZ</span>6.850,00
                                 </div>
                                 <div class="price-by">/mes</div>
                             </div>
+                            <p><span class="plan-promotional-price">KZ 6.850,00</span><span class="plan-promotional-mark">-12.41% desc.</span></p>
                         </div>
                         <div class="plan-button recommended">
                               Escolher o plano
@@ -169,45 +184,104 @@
                             <h3>Recursos essenciais</h3>
                             <ul>
                                 <li  class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Utilizadores Ilimitados</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Exportação do SAF-T</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Gestão de Produtos</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Gestão de Clientes C/C</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Movimentos de Caixa</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Fiscalidade</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Múltiplas Lojas</span>
                                 </li>
                                 
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Relatórios</span>
                                 </li>
                                 
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
                                     <span>Gestão de Compras</span>
                                 </li>
                                 <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                    <span class="check-icons"></span>
+                                    <span>Tesouraria</span>
+                                </li>
+                            </ul>
+                        </div>
+                   </div>
+                </div>
+                <div class="box3">
+                    <div class="plan-item">
+                        <div class="plan-header" >
+                            <h3>Entre em contacto</h3>
+                            <p>Tenha acesso ao melhor da Shopify com recursos avançados e as menores taxas de transação</p>
+                        </div>
+                        
+                        <div class="plan-button">
+                              Escolher o plano
+                        </div>
+                        <div class="plan-resources">
+                            <h3>Recursos essenciais</h3>
+                            <ul>
+                                <li  class="flex-c-vert">
+                                    <span class="check-icons"></span>
+                                    <span>Utilizadores Ilimitados</span>
+                                </li>
+                                <li class="flex-c-vert">
+                                    <span class="check-icons"></span>
+                                    <span>Exportação do SAF-T</span>
+                                </li>
+                                <li class="flex-c-vert">
+                                    <span class="check-icons"></span>
+                                    <span>Gestão de Produtos</span>
+                                </li>
+                                <li class="flex-c-vert">
+                                    <span class="check-icons"></span>
+                                    <span>Gestão de Clientes C/C</span>
+                                </li>
+                                <li class="flex-c-vert">
+                                    <span class="check-icons"></span>
+                                    <span>Movimentos de Caixa</span>
+                                </li>
+                                <li class="flex-c-vert">
+                                    <span class="check-icons"></span>
+                                    <span>Fiscalidade</span>
+                                </li>
+                                <li class="flex-c-vert">
+                                    <span class="check-icons"></span>
+                                    <span>Múltiplas Lojas</span>
+                                </li>
+                                
+                                <li class="flex-c-vert">
+                                    <span class="check-icons"></span>
+                                    <span>Relatórios</span>
+                                </li>
+                                
+                                <li class="flex-c-vert">
+                                    <span class="check-icons"></span>
+                                    <span>Gestão de Compras</span>
+                                </li>
+                                <li class="flex-c-vert">
+                                    <span class="check-icons"></span>
                                     <span>Tesouraria</span>
                                 </li>
                             </ul>
@@ -222,71 +296,71 @@
                    <div class="first-column">
                         <ul>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Páginas do produto compartilháveis</span>
                                     <p></p>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Canais de vendas</span>
                                     <p></p>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Produtos ilimitados</span>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Checkout rápido e confiável</span>
                                     <p></p>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Atendimento ao cliente</span>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Certificado SSL grátis</span>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Análise contra fraude</span>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Venda em mais de 133 países</span>
                                     <p></p>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Recuperação de carrinho abandonado</span>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Ecossistema com mais de 4.100 apps</span>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Criação manual de pedidos</span>
                                     <p></p>
@@ -294,39 +368,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="second-column">
-                        <ul>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Automação de marketing</span>
-                                    <p>Envie e-mails automatizados com fluxos de trabalho personalizados ou de modelo.</p>
-                                </div>
-                            </li>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Segmentação de clientes</span>
-                                    <p>Filtre e agrupe os clientes em uma quantidade ilimitada de segmentos.</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Contatos ilimitados</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                           </ul>
-                    </div>
-
                     <div class="third-column">
                          <h3>Os planos Basic, Shopify e Advanced incluem:</h3>
                         <ul>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Automação de marketing</span>
                                     <p>Envie e-mails automatizados com fluxos de trabalho personalizados ou de modelo.</p>
@@ -334,827 +380,72 @@
                             </li>
                            
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
                                     <span>Segmentação de clientes</span>
                                     <p>Filtre e agrupe os clientes em uma quantidade ilimitada de segmentos.</p>
                                 </div>
                             </li>
                             <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                                <span><ion-icon name="checkmark-circle-outline"></ion-icon></span>
                                 <div>
-                                    <span>Contatos ilimitados</span>
-                                    <p></p>
+                                    <span>Segmentação de clientes</span>
+                                    <p>Filtre e agrupe os clientes em uma quantidade ilimitada de segmentos.</p>
                                 </div>
                             </li>
+                            
                            </ul>
                     </div>
                 </div>
              </div>
-
-            
-
-                
-             <div class="wrapper m10-adjust flex">
-                <div class="box2 " style="padding-left: 50px;">
-                    <div class="plan-item">
-                        <div class="plan-header">
-                            <h3>Plano Económico</h3>
-                            <p>Leve sua empresa para o próximo patamar</p>
-                        </div>
-                        <div class="plan-price">
-                            <p>Preço inicial <small class="promo-price">KZ 2.000,00</small></p>
-                            <div class="price-body flex" >
-                                <div class="price-number">
-                                    KZ 5.850,00
-                                </div>
-                                <div class="price-by">/mes</div>
+             <div class="wrapper faq">
+                <div class="container">
+                    <h2>Perguntas frequentes</h2>
+                    <div class="faq-content">
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <h3>O que é e como funciona o Caxten?</h3>
+                               <ion-icon class="faq-icon"name="add-outline"></ion-icon>
+                            </div>
+                            <div class="faq-text">
+                                <p>O Caxten é uma plataforma completa de facturação que permite gerenciar um negócio.</p>
+                                <p>Gerencie produtos, stock, tesouraria e muito mais.</p>
+                                O Caxten é completamente baseado na nuvem e hospedada, o que significa que você não precisa se preocupar com a actualização ou manutenção de software ou servidores da web. Isso dá flexibilidade para acessar e administrar o seu negócio de qualquer lugar com uma conexão à internet.
                             </div>
                         </div>
-                        <div class="plan-button">
-                              Escolher o plano
-                        </div>
-                        <div class="plan-resources">
-                            <h3>Recursos essenciais</h3>
-                            <ul>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Utilizadores Ilimitados</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Exportação do SAF-T</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Produtos</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Clientes C/C</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Movimentos de Caixa</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Fiscalidade</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Múltiplas Lojas</span>
-                                </li>
-                                
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Relatórios</span>
-                                </li>
-                            </ul>
-                        </div>
-                   </div>
-                </div>
-                <div class="box2" style="padding-right: 50px;">
-                    <div class="plan-item">
-                        <div class="plan-header">
-                            <h3>Plano Negócio</h3>
-                            <p>Experimente o melhor do Caxten</p>
-                        </div>
-                        <div class="plan-price">
-                            <p>Preço inicial <small class="promo-price">KZ 2.000,00</small></p>
-                            <div class="price-body flex" >
-                                <div class="price-number">
-                                    KZ 6.850,00
-                                </div>
-                                <div class="price-by">/mes</div>
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <h3>O Caxten é gratuito?</h3>
+                               <ion-icon class="faq-icon"name="add-outline"></ion-icon>
+                            </div>
+                            <div class="faq-text">
+                                <p>Sim, o Caxten é gratuito durante 14 dias e com ele você pode usar todos os recursos sem qualquer custo ou cobrança.</p>
+                                <p>Depois que o período de avaliação expirar, escolha um plano que seja compatível com o tamanho e a fase do seu negócio.</p>                   
                             </div>
                         </div>
-                        <div class="plan-button recommended">
-                              Escolher o plano
-                        </div>
-                        <div class="plan-resources">
-                            <h3>Recursos essenciais</h3>
-                            <ul>
-                                <li  class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Utilizadores Ilimitados</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Exportação do SAF-T</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Produtos</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Clientes C/C</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Movimentos de Caixa</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Fiscalidade</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Múltiplas Lojas</span>
-                                </li>
-                                
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Relatórios</span>
-                                </li>
-                                
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Compras</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Tesouraria</span>
-                                </li>
-                            </ul>
-                        </div>
-                   </div>
-                </div>
-                
-             </div> 
-             <div class="wrapper">
-                <div class="all-plan-resources flex">
-                    <h3>Todos os planos incluem:</h3>
-                   <div class="first-column">
-                        <ul>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Páginas do produto compartilháveis</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Canais de vendas</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Produtos ilimitados</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Checkout rápido e confiável</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Atendimento ao cliente</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Certificado SSL grátis</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Análise contra fraude</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Venda em mais de 133 países</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Recuperação de carrinho abandonado</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Ecossistema com mais de 4.100 apps</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Criação manual de pedidos</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="second-column">
-                        <ul>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Automação de marketing</span>
-                                    <p>Envie e-mails automatizados com fluxos de trabalho personalizados ou de modelo.</p>
-                                </div>
-                            </li>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Segmentação de clientes</span>
-                                    <p>Filtre e agrupe os clientes em uma quantidade ilimitada de segmentos.</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Contatos ilimitados</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                           </ul>
-                    </div>
-
-                    <div class="third-column">
-                         <h3>Os planos Basic, Shopify e Advanced incluem:</h3>
-                        <ul>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Automação de marketing</span>
-                                    <p>Envie e-mails automatizados com fluxos de trabalho personalizados ou de modelo.</p>
-                                </div>
-                            </li>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Segmentação de clientes</span>
-                                    <p>Filtre e agrupe os clientes em uma quantidade ilimitada de segmentos.</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Contatos ilimitados</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                           </ul>
-                    </div>
-                </div>
-             </div>
-
-
-
-
-
-
-
-             <div class="wrapper m10-adjust flex">
-                <div class="box2 ">
-                    <div class="plan-item">
-                        <div class="plan-header" style="text-align: center;">
-                            <h3>Plano Negócio</h3>
-                            <p>Experimente o melhor do Caxten</p>
-                        </div>
-                        <div class="plan-price" style="text-align: center;">
-                            <p>Preço inicial <small class="promo-price">KZ 2.000,00</small></p>
-                            <div class="price-body flex-c-hort" style="margin-top: 10px;" >
-                                <div class="price-number">
-                                    KZ 5.850,00
-                                </div>
-                                <div class="price-by">/mes</div>
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <h3>O que preciso para começar a usar o Caxten?</h3>
+                               <ion-icon class="faq-icon"name="add-outline"></ion-icon>
+                            </div>
+                            <div class="faq-text">
+                                <p>Para começar a usar o Caxten é simples, basta se cadastrar em nossa plataforma e começar a registar suas vendas.</p>
                             </div>
                         </div>
-                        <div class="plan-button">
-                              Escolher o plano
-                        </div>
-                        <div class="plan-resources">
-                            <h3>Recursos essenciais</h3>
-                            <ul>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Utilizadores Ilimitados</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Exportação do SAF-T</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Produtos</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Clientes C/C</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Movimentos de Caixa</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Fiscalidade</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Múltiplas Lojas</span>
-                                </li>
-                                
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Relatórios</span>
-                                </li>
-                            </ul>
-                        </div>
-                   </div>
-                </div>
-                <div class="box2">
-                    <div class="plan-item">
-                        <div class="plan-header" style="text-align: center;">
-                            <h3>Plano Negócio</h3>
-                            <p>Experimente o melhor do Caxten</p>
-                        </div>
-                        <div class="plan-price" style="text-align: center;">
-                            <p>Preço inicial <small class="promo-price">KZ 2.000,00</small></p>
-                            <div class="price-body flex-c-hort" style="margin-top: 10px;" >
-                                <div class="price-number">
-                                    KZ 6.850,00
-                                </div>
-                                <div class="price-by">/mes</div>
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <h3>O que fazer com o Caxten?</h3>
+                               <ion-icon class="faq-icon"name="add-outline"></ion-icon>
+                            </div>
+                            <div class="faq-text">
+                                <p>Com o Caxten você pode gerir seus produtos, controlar stock, criar facturas, orçamentos, além disso pode lançar suas receitas ou despesas e usufruir de poderosas automações, tudo de forma muito simples.</p>
+                                <p>Com todos os dados criados em seu painel, você terá acesso a relatórios e gráficos incríveis, além de ser notificado sempre que uma acção for necessária.</p>
                             </div>
                         </div>
-                        <div class="plan-button recommended">
-                              Escolher o plano
-                        </div>
-                        <div class="plan-resources">
-                            <h3>Recursos essenciais</h3>
-                            <ul>
-                                <li  class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Utilizadores Ilimitados</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Exportação do SAF-T</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Produtos</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Clientes C/C</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Movimentos de Caixa</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Fiscalidade</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Múltiplas Lojas</span>
-                                </li>
-                                
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Relatórios</span>
-                                </li>
-                                
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Compras</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Tesouraria</span>
-                                </li>
-                            </ul>
-                        </div>
-                   </div>
-                </div>
-                
-             </div> 
-             <div class="wrapper">
-                <div class="all-plan-resources flex">
-                    <h3>Todos os planos incluem:</h3>
-                   <div class="first-column">
-                        <ul>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Páginas do produto compartilháveis</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Canais de vendas</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Produtos ilimitados</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Checkout rápido e confiável</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Atendimento ao cliente</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Certificado SSL grátis</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Análise contra fraude</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Venda em mais de 133 países</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Recuperação de carrinho abandonado</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Ecossistema com mais de 4.100 apps</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Criação manual de pedidos</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="second-column">
-                        <ul>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Automação de marketing</span>
-                                    <p>Envie e-mails automatizados com fluxos de trabalho personalizados ou de modelo.</p>
-                                </div>
-                            </li>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Segmentação de clientes</span>
-                                    <p>Filtre e agrupe os clientes em uma quantidade ilimitada de segmentos.</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Contatos ilimitados</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                           </ul>
-                    </div>
-
-                    <div class="third-column">
-                         <h3>Os planos Basic, Shopify e Advanced incluem:</h3>
-                        <ul>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Automação de marketing</span>
-                                    <p>Envie e-mails automatizados com fluxos de trabalho personalizados ou de modelo.</p>
-                                </div>
-                            </li>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Segmentação de clientes</span>
-                                    <p>Filtre e agrupe os clientes em uma quantidade ilimitada de segmentos.</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Contatos ilimitados</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                           </ul>
                     </div>
                 </div>
-             </div>
-
-
-
-             
-             <div class="wrapper m10-adjust flex">
-                <div class="box2" style="padding-left: 50px;">
-                    <div class="plan-item">
-                        <div class="plan-header" style="text-align: center;">
-                            <h3>Plano Negócio</h3>
-                            <p>Experimente o melhor do Caxten</p>
-                        </div>
-                        <div class="plan-price" style="text-align: center;">
-                            <p>Preço inicial <small class="promo-price">KZ 2.000,00</small></p>
-                            <div class="price-body flex-c-hort" style="margin-top: 10px;" >
-                                <div class="price-number">
-                                    KZ 5.850,00
-                                </div>
-                                <div class="price-by">/mes</div>
-                            </div>
-                        </div>
-                        <div class="plan-button">
-                              Escolher o plano
-                        </div>
-                        <div class="plan-resources">
-                            <h3>Recursos essenciais</h3>
-                            <ul>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Utilizadores Ilimitados</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Exportação do SAF-T</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Produtos</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Clientes C/C</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Movimentos de Caixa</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Fiscalidade</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Múltiplas Lojas</span>
-                                </li>
-                                
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Relatórios</span>
-                                </li>
-                            </ul>
-                        </div>
-                   </div>
-                </div>
-                <div class="box2" style="padding-right: 50px;">
-                    <div class="plan-item">
-                        <div class="plan-header" style="text-align: center;">
-                            <h3>Plano Negócio</h3>
-                            <p>Experimente o melhor do Caxten</p>
-                        </div>
-                        <div class="plan-price" style="text-align: center;">
-                            <p>Preço inicial <small class="promo-price">KZ 2.000,00</small></p>
-                            <div class="price-body flex-c-hort" style="margin-top: 10px;" >
-                                <div class="price-number">
-                                    KZ 6.850,00
-                                </div>
-                                <div class="price-by">/mes</div>
-                            </div>
-                        </div>
-                        <div class="plan-button recommended">
-                              Escolher o plano
-                        </div>
-                        <div class="plan-resources">
-                            <h3>Recursos essenciais</h3>
-                            <ul>
-                                <li  class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Utilizadores Ilimitados</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Exportação do SAF-T</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Produtos</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Clientes C/C</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Movimentos de Caixa</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Fiscalidade</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Múltiplas Lojas</span>
-                                </li>
-                                
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Relatórios</span>
-                                </li>
-                                
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Gestão de Compras</span>
-                                </li>
-                                <li class="flex-c-vert">
-                                    <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                    <span>Tesouraria</span>
-                                </li>
-                            </ul>
-                        </div>
-                   </div>
-                </div>
-                
-             </div> 
-             <div class="wrapper">
-                <div class="all-plan-resources flex">
-                    <h3>Todos os planos incluem:</h3>
-                   <div class="first-column">
-                        <ul>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Páginas do produto compartilháveis</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Canais de vendas</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Produtos ilimitados</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Checkout rápido e confiável</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Atendimento ao cliente</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Certificado SSL grátis</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Análise contra fraude</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Venda em mais de 133 países</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Recuperação de carrinho abandonado</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Ecossistema com mais de 4.100 apps</span>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Criação manual de pedidos</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="second-column">
-                        <ul>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Automação de marketing</span>
-                                    <p>Envie e-mails automatizados com fluxos de trabalho personalizados ou de modelo.</p>
-                                </div>
-                            </li>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Segmentação de clientes</span>
-                                    <p>Filtre e agrupe os clientes em uma quantidade ilimitada de segmentos.</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Contatos ilimitados</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                           </ul>
-                    </div>
-
-                    <div class="third-column">
-                         <h3>Os planos Basic, Shopify e Advanced incluem:</h3>
-                        <ul>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Automação de marketing</span>
-                                    <p>Envie e-mails automatizados com fluxos de trabalho personalizados ou de modelo.</p>
-                                </div>
-                            </li>
-                           
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Segmentação de clientes</span>
-                                    <p>Filtre e agrupe os clientes em uma quantidade ilimitada de segmentos.</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <span><ion-icon name="checkmark-circle"></ion-icon></span>
-                                <div>
-                                    <span>Contatos ilimitados</span>
-                                    <p></p>
-                                </div>
-                            </li>
-                           </ul>
-                    </div>
-                </div>
-             </div>
+            </div>
+            <p class="more-info">Saiba mais sobre preços em <a href="#">www.shopify.com</a></p>
           </section>
         </div>
     </main>

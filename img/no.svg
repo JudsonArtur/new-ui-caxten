@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="aa" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g  transform="translate(-11.000000, -617.000000)" stroke="#7086A6" stroke-width="2">
+            <g  transform="translate(12.000000, 618.000000)">
+                <line x1="8" y1="0" x2="0" y2="8" id="Path"></line>
+                <line x1="0" y1="0" x2="8" y2="8" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

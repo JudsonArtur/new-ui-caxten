@@ -1,18 +1,9 @@
-/* FONTS */
-@font-face {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    src: url('../fonts/segoe-regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
-    src: url('../fonts/segoe-bold.ttf') format('truetype');
-}
 
  title{
     display: none !important;
 }
 
-.ion-icons{
+.ion-icons , ion-icons{
    pointer-events: none;
 }
 /*RESET*/
@@ -24,7 +15,8 @@ h4,strong, small,img,a,b{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 html {
@@ -34,6 +26,8 @@ html {
 
 body{
     background-color: #F0F4FD;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 body::-webkit-scrollbar {
