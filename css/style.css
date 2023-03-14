@@ -4,6 +4,9 @@
    .iu-p--change --> neto onde iu-p significa info-user--password  
 */ 
 
+ion-icon{
+    pointer-events: none;
+}
 .container{
     width: 100%;
     max-width: 960px;
@@ -12,6 +15,7 @@
 .final-checkout{
     color: #363636;
 }
+
  /* fc = final-checkout */
 .fc--main-header{
     width: 100%;
@@ -410,41 +414,6 @@
 
 
 
- @media ( max-width:1068px)
-  {
-    .user-menu{
-      left: -85%;
-    }
-    .fc--second-header {
-        padding: 20px;
-    }
- }
- @media ( max-width:768px)
- {
-   .w-65.pd-rigth-30, .w-35{
-      width: 100%;
-      padding-right: 0;
-      padding: 20px;
-   }
-
-   .fc--main-header > .flex-c-vert {
-        padding: 0 10px;
-    }
-
-    .fc--second-header{
-        padding: 20px 15px;
-    }
-}
-@media ( max-width:468px)
-{
-  .w-65.pd-rigth-30, .w-35{
-     padding: 10px;
-  }
-  .payment-types label {
-       flex-wrap: nowrap;
-  }
-}
-
 
 /* ---- PLANO -----*/
 
@@ -819,4 +788,79 @@
 }
 .more-info a:hover{
     text-decoration: none;
+}
+
+
+
+@media ( max-width:1068px)
+{
+  .user-menu{
+    left: -85%;
+  }
+  .fc--second-header {
+      padding: 20px;
+  }
+}
+@media ( max-width:768px)
+{
+ .w-65.pd-rigth-30, .w-35{
+    width: 100%;
+    padding-right: 0;
+    padding: 20px;
+ }
+
+ .fc--main-header > .flex-c-vert {
+      padding: 0 10px;
+      
+  }
+
+  .fc--second-header{
+      padding: 20px 15px;
+  }
+  
+  .all-plan-resources .first-column ul li, .all-plan-resources .third-column ul li {
+      width: 50%;
+  }
+}
+@media ( max-width:468px)
+{
+.w-65.pd-rigth-30, .w-35{
+   padding: 10px;
+}
+.payment-types label {
+     flex-wrap: nowrap;
+}
+.fc--main-header > .flex-c-vert {
+  padding: 0 0px;
+  flex-direction: column;
+}
+  .user-menu {
+      left: -37%;
+  }
+  .user-info{
+      margin-top: 15px;
+  }
+ .warning-banner{
+    flex-wrap: nowrap;
+    padding: 10px !important;
+  }
+  .all-plan-resources .first-column ul li,   .all-plan-resources .third-column ul li {
+      width: 100%;
+      margin-bottom:20px
+  }
+}
+
+
+@media (max-width:400px){
+    .fc--second-header h2 {
+        font-size: 1.002rem;
+    }
+    .payment-types--text span{
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .payment-types--text small{
+        position: relative;
+        top: 5px;
+    }
 }
