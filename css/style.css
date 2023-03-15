@@ -5,7 +5,7 @@
 */ 
 
 ion-icon{
-    pointer-events: none;
+    pointer-events: none !important;
 }
 .container{
     width: 100%;
@@ -345,9 +345,13 @@ ion-icon{
 }
 
 .checkout-subtotal-price {
-    margin: 20px 0;
+    margin: 20px 0 0;
     padding: 2px 18px 8px ;
     border-bottom: 1px solid #dfdfdf;
+    display:none;
+}
+.checkout-subtotal-price.open{
+    display:block;
 }
 .subtotal-price-list{
     flex-wrap: nowrap;
@@ -372,7 +376,7 @@ ion-icon{
 }
 
 .checkout-btns-text{
-    padding: 0 18px ;
+    padding: 20px 18px 0 ;
 }
 
 .checkout-btns-text p{
@@ -403,6 +407,7 @@ ion-icon{
      cursor:not-allowed;
      background-color: #ededed;
      color: #f8f8f8;
+     width: calc(100% - 40px);
 }
 .checkout-button.gateway img{
     width: 19px;
@@ -483,6 +488,18 @@ ion-icon{
     font-size: .8rem;
     line-height: 1.4;
 }
+.lets-talk{
+    margin: 18px 0 15px
+}
+.lets-talk span svg{
+    width:40px;
+    height: 40px;
+    color:#444
+}
+.lets-talk h3{
+    font-size:1.62rem;
+    padding-left:8px;
+}
 
 .price-body .currency-style{
     font-size: .8rem;
@@ -552,7 +569,20 @@ ion-icon{
 .plan-button:hover{
     transform: scale(1.03);
 }  
-
+.plan-button.whatsapp{
+   border:1px solid #666;
+   background:transparent;
+   color:#333;
+}
+.whatsapp ion-icon{
+    position: relative;
+    top:3px;
+    font-size:18px
+}
+.whatsapp span{
+    font-weight: 600;
+    font-size:1.01rem
+}
 .plan-button.recommended {
     background: #fff;
     border: 1px solid #3b82ff;

@@ -12,12 +12,14 @@ $('body').on('click',function(e){
 
  /* MESES E ANO */
 
-$('.month-year-js label').on('click',function(){
+$('.month-year-js label').on('click',function(e){
+      e.stopPropagation();
      $('.info-year').find('input').prop('checked',false);
      $('.info-month').find('input').prop('checked',false);
      $(this).find('input').prop('checked',true);
      $('.month-year-js label').removeClass('active');
      $(this).addClass('active');
+     $('.checkout-subtotal-price').addClass('open');
      $('#subtotal-price').html(`${$(this).data('price')} KZ`);
      $('#total-price').html(`${$(this).data('total')} KZ`);
      if( $('#info-year').is(":checked")){
@@ -32,10 +34,11 @@ $('.month-year-js label').on('click',function(){
 
 /* TRANSFERENCIA  E MULTICAIXA EXPRESS */
 $('.payment-types.p-way label').on('click',function(){
+
      $('.pt--gateway').find('input').prop('checked',false);
      $('.pt--transfer').find('input').prop('checked',false);
      $(this).find('input').prop('checked',true);
-     $('.transfer').removeClass('no-click'); 
+     $('.no-click').css('display','none'); 
      $('.payment-types.p-way label').removeClass('active');
      $(this).addClass('active');
      if( $('#transfer').is(":checked")){
