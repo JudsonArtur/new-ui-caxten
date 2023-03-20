@@ -934,14 +934,9 @@ ion-icon{
     transition: margin .45s ease;
 }
 
-.login-content.register{
-    width: 100%;
-    max-width: 605px;
-}
-
 .login-left{
     background:#fff;
-    flex-basis: 68.7%;
+    flex-basis: 63%;
     min-height: 100vh;
     
 }
@@ -963,28 +958,24 @@ ion-icon{
 .form-content{
     margin-top: 40px;
 }
-.form-content.register{
-  margin-top: 20px
-}
 
 .form-control{
     display:flex;
     flex-direction:column;
     margin-bottom: 20px;
 }
-.form-control.w-49:nth-child(2){
-    margin-left: 2%
-}
+
 .form-control label {
     display: block;
     color: #1c293b;
     font-weight: 600;
     margin-bottom: 10px;
-    font-size: .870rem;
+    font-size: .810rem;
     cursor: pointer;
 }
 .form-control label span{
-    margin-left: 4px;
+    margin-left: 2px;
+    font-size: .8rem;
     color: #e0102b;
     cursor: help;
 }
@@ -992,6 +983,22 @@ ion-icon{
     cursor: text;
 }
 
+.form-control .input-class span {
+    width: 24px;
+    height: 20px;
+    position: absolute;
+    bottom: 14px;
+    display: inline-block;
+    right: 15px;
+    cursor: pointer;
+    
+}
+.y_open {
+    display: none;
+}
+.form-control .input-class{
+    position: relative;
+}
 .form-control .input-class input{
     padding: 0 15px;
     font-size: .95rem;
@@ -1100,9 +1107,8 @@ input[type=checkbox]:checked::before{
     line-height: 20px;
     cursor: pointer;
 }
-.form-button button.disabled {
-    background-color: rgba(0,147,238,.4);
-    cursor: not-allowed;
+.form-button button:hover{
+    background-color: #1188d1;
 }
 
 .login-links{
@@ -1115,22 +1121,32 @@ input[type=checkbox]:checked::before{
     cursor: pointer;
     color: #25374f;
 }
+
+.login-links a:hover{
+  text-decoration: none;
+}
 .login-links a:last-of-type{
    color: #75869c;
    font-size: .78rem;
 }
+
+.login-links a:last-of-type{
+    color: #75869c;
+    font-size: .78rem;
+ }
 .login-links a:last-of-type:hover{
     color: #323b46;
-    
+    text-decoration: underline;
  }
+
  .login-links a.register{
     color: #25374f !important;
  }
 
  .login-right {
-    padding:30px;
+    padding:40px;
     background: #4091e7;
-    flex-basis: 31.3%;
+    flex-basis: 37%;
     min-height: 100vh;
     display: flex;
   align-items: center;
@@ -1146,10 +1162,12 @@ input[type=checkbox]:checked::before{
 }
 .right-content{
     margin-top: 20px;
+    
 }
  .right-content h2{
-    font-size: 1.381rem;
+    font-size: 1.481rem;
     color: #fff;
+    padding: 0 25px;
  }
  .right-text{
     padding-top: 16px;
@@ -1158,7 +1176,7 @@ input[type=checkbox]:checked::before{
  }
  .right-text p {
     font-size: .95rem;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #fff;
     opacity: .9;
 }
@@ -1172,11 +1190,12 @@ input[type=checkbox]:checked::before{
 }
 
  .right-image {
-    width: 250px;
-    height: 300px;
+    width: 80%;
+    max-width: 400px;
+    height: 360px;
     -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.08);
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.08);
-    background-size: contain;
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: 50%;
     display: inline-block;

@@ -73,3 +73,13 @@ $('.payment-types.p-way label').on('click',function(){
           $(this).find('.faq-icon').attr('name','add-outline' );
 
  });
+
+ $('.input-class span img').on('click', function () {
+     $(this).css('display', 'none');
+     $(this).siblings().css('display', 'block');
+     if ($(this).parent().siblings('input').attr('type') === 'password') {
+         $(this).parent().siblings('input').attr('type', 'text');
+         return false;
+     }
+     $(this).parent().siblings('input').attr('type', 'password');
+ });
