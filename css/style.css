@@ -897,61 +897,60 @@ ion-icon{
         top: 5px;
     }
 }
-.login-wrapper{
+.auth-wrapper{
     display:flex;
     min-height: 100vh;
 }
 
-.login-header{
+.auth-header{
     justify-content: space-between;
     padding: 30px 35px 10px;
 }
 
-.login-header a img{
+.auth-header a img{
     width: 40px;
 }
-.login-header a img.register{
+.auth-header a img.register{
     width: 150px;
 }
 
-.login-header a {
+.auth-header a {
    color: #3b86fb;
    font-weight: 600;
    font-size: .8rem;
 }
-.login-header a:hover {
+.auth-header a:hover {
     text-decoration: underline;
 }
 
-.login-content {
+.auth-content {
     display: flex;
     width: 100%;
     max-width: 505px;
     align-self: center;
     flex-direction: column;
-    margin: 30px auto;
+    margin: 40px auto 30px;
     -webkit-transition: margin .45s ease;
     transition: margin .45s ease;
 }
 
-.login-left{
+.auth-left{
     background:#fff;
     flex-basis: 63%;
     min-height: 100vh;
     
 }
-.login-title h2 {
+.auth-title h2 {
     font-size: 1.4rem;
     line-height: 30px;
     color: #000;
     display: flex;
 }
-.login-title p {
+.auth-title p {
     font-size: 15px;
     color: #262a3e;
-    margin-top: 16px;
+    margin-top: 12px;
     font-weight: 400;
-    letter-spacing: .15px;
 }
 
 
@@ -975,7 +974,7 @@ ion-icon{
 }
 .form-control label span{
     margin-left: 2px;
-    font-size: .8rem;
+    font-size: .7rem;
     color: #e0102b;
     cursor: help;
 }
@@ -1017,8 +1016,13 @@ ion-icon{
     outline: 0;
     box-shadow: 0 0 0 2px rgba(23, 31, 201, .2);
 }
+.form-check{
+    flex-wrap: nowrap;
+    align-items: flex-start !important;
+}
 .form-check input {
     margin-right: 6px;
+    margin-left: 2px;
     width: 16px;
     height: 16px;
     position: relative;
@@ -1111,39 +1115,39 @@ input[type=checkbox]:checked::before{
     background-color: #1188d1;
 }
 
-.login-links{
-    margin-top: 40px;
+.auth-links{
+    margin-top: 30px;
     justify-content: space-between;
 }
-.login-links a{
+.auth-links a{
     font-size: .77rem;
     display: flex;
     cursor: pointer;
     color: #25374f;
 }
 
-.login-links a:hover{
+.auth-links a:hover{
   text-decoration: none;
 }
-.login-links a:last-of-type{
+.auth-links a:last-of-type{
    color: #75869c;
    font-size: .78rem;
 }
 
-.login-links a:last-of-type{
+.auth-links a:last-of-type{
     color: #75869c;
     font-size: .78rem;
  }
-.login-links a:last-of-type:hover{
+.auth-links a:last-of-type:hover{
     color: #323b46;
     text-decoration: underline;
  }
 
- .login-links a.register{
+ .auth-links a.register{
     color: #25374f !important;
  }
 
- .login-right {
+ .auth-right {
     padding:40px;
     background: #4091e7;
     flex-basis: 37%;
@@ -1155,7 +1159,7 @@ input[type=checkbox]:checked::before{
     flex-direction: column;
 }
 
-.login-right.register{
+.auth-right.register{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center center;
@@ -1190,9 +1194,10 @@ input[type=checkbox]:checked::before{
 }
 
  .right-image {
-    width: 80%;
+    width: 90%;
+    margin: 5px auto;
     max-width: 400px;
-    height: 360px;
+    height: 320px;
     -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.08);
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.08);
     background-size:contain;
@@ -1201,4 +1206,28 @@ input[type=checkbox]:checked::before{
     display: inline-block;
     border-radius: 3px;
     overflow: hidden;
+}
+.warning-banner.recover{
+    margin: 30px 0 -10px;
+}
+
+
+@media (max-width:860px) {
+    .auth-content{
+        padding: 15px;
+    }
+    .auth-header{
+        padding: 30px 15px 10px;
+    }
+}
+@media (max-width:660px) {
+    .auth-right {
+        display: none;
+    }
+    .auth-left{
+        flex-basis: 100%;
+    }
+    .auth-links a{
+        margin-bottom: 15px;
+    }
 }
