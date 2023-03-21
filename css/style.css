@@ -1080,8 +1080,7 @@ input[type=checkbox]:checked::before{
 }
 
 .form-check span {
-    font-size: .863rem;
-    font-weight: 600;
+    font-size: .8rem;
     color: #75869c;
 }
 .form-check span.register{
@@ -1146,7 +1145,9 @@ input[type=checkbox]:checked::before{
  .auth-links a.register{
     color: #25374f !important;
  }
-
+ .auth-links a.register:hover{
+        text-decoration: none;
+ }
  .auth-right {
     padding:40px;
     background: #4091e7;
