@@ -1192,6 +1192,15 @@ input[type=checkbox]:checked::before{
     display: block;
     text-decoration: underline;
     margin: 10px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-content a img{
+    width: 20px;
+    margin-left: 5px;
+    position: relative;
+    top: 0.5px;
 }
 
  .right-image {
